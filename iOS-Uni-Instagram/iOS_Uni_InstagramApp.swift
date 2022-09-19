@@ -15,3 +15,9 @@ struct iOS_Uni_InstagramApp: App {
         }
     }
 }
+
+struct Previews_iOS_Uni_InstagramApp_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}

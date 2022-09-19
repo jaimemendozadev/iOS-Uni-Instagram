@@ -11,6 +11,13 @@
 		7466E14928D66284005B0827 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7466E14828D66284005B0827 /* ContentView.swift */; };
 		7466E14B28D66285005B0827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7466E14A28D66285005B0827 /* Assets.xcassets */; };
 		7466E14E28D66285005B0827 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7466E14D28D66285005B0827 /* Preview Assets.xcassets */; };
+		7466E15828D66456005B0827 /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7466E15728D66456005B0827 /* HomeFeedView.swift */; };
+		7466E15A28D6649A005B0827 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7466E15928D6649A005B0827 /* ExploreView.swift */; };
+		7466E15C28D664AD005B0827 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7466E15B28D664AD005B0827 /* CameraView.swift */; };
+		7466E15E28D664BA005B0827 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7466E15D28D664BA005B0827 /* NotificationsView.swift */; };
+		7466E16028D664C7005B0827 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7466E15F28D664C7005B0827 /* ProfileView.swift */; };
+		74829E5628D8A2AD00400D2D /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829E5528D8A2AD00400D2D /* StoryView.swift */; };
+		74829E5928D8A42100400D2D /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829E5828D8A42100400D2D /* StoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		7466E14828D66284005B0827 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7466E14A28D66285005B0827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7466E14D28D66285005B0827 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7466E15728D66456005B0827 /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
+		7466E15928D6649A005B0827 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		7466E15B28D664AD005B0827 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		7466E15D28D664BA005B0827 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		7466E15F28D664C7005B0827 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		74829E5528D8A2AD00400D2D /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		74829E5828D8A42100400D2D /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		74F1C94F28D66BE8008E2BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,8 @@
 		7466E14528D66284005B0827 /* iOS-Uni-Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				74F1C94F28D66BE8008E2BBF /* Info.plist */,
+				7466E15428D66403005B0827 /* Views */,
 				7466E14628D66284005B0827 /* iOS_Uni_InstagramApp.swift */,
 				7466E14828D66284005B0827 /* ContentView.swift */,
 				7466E14A28D66285005B0827 /* Assets.xcassets */,
@@ -65,6 +82,28 @@
 				7466E14D28D66285005B0827 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7466E15428D66403005B0827 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74829E5728D8A40100400D2D /* StoriesView */,
+				7466E15728D66456005B0827 /* HomeFeedView.swift */,
+				7466E15928D6649A005B0827 /* ExploreView.swift */,
+				7466E15B28D664AD005B0827 /* CameraView.swift */,
+				7466E15D28D664BA005B0827 /* NotificationsView.swift */,
+				7466E15F28D664C7005B0827 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74829E5728D8A40100400D2D /* StoriesView */ = {
+			isa = PBXGroup;
+			children = (
+				74829E5528D8A2AD00400D2D /* StoryView.swift */,
+				74829E5828D8A42100400D2D /* StoriesView.swift */,
+			);
+			path = StoriesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74829E5628D8A2AD00400D2D /* StoryView.swift in Sources */,
 				7466E14928D66284005B0827 /* ContentView.swift in Sources */,
+				74829E5928D8A42100400D2D /* StoriesView.swift in Sources */,
 				7466E14728D66284005B0827 /* iOS_Uni_InstagramApp.swift in Sources */,
+				7466E15A28D6649A005B0827 /* ExploreView.swift in Sources */,
+				7466E15C28D664AD005B0827 /* CameraView.swift in Sources */,
+				7466E15828D66456005B0827 /* HomeFeedView.swift in Sources */,
+				7466E16028D664C7005B0827 /* ProfileView.swift in Sources */,
+				7466E15E28D664BA005B0827 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +315,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOS-Uni-Instagram/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-Uni-Instagram/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a photo.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to access a photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +346,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOS-Uni-Instagram/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-Uni-Instagram/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a photo.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to access a photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
