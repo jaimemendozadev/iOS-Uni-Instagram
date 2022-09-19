@@ -11,11 +11,10 @@ import SwiftUI
 struct PostView: View {
     var body: some View {
         VStack() {
-            Text("PostView")
             HStack {
-                // userProfile, userName
-                
+                ProfileInfo(userName: "Kanye West")
             }
+            .padding() 
             
             HStack {
                 // like, comment actions

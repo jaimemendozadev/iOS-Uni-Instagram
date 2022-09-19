@@ -16,7 +16,7 @@ struct HomeFeedView: View {
                     
                     ForEach(1...30, id: \.self) {num in
                         PostView()
-                        
+                            .padding(.bottom, 20)
                     }
                     
                 }
