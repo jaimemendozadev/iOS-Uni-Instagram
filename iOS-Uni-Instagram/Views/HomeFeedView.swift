@@ -14,6 +14,11 @@ struct HomeFeedView: View {
                 VStack {
                     StoriesView()
                     
+                    ForEach(1...30, id: \.self) {num in
+                        PostView()
+                        
+                    }
+                    
                 }
                 
             }.navigationTitle(Text("Instagram"))
