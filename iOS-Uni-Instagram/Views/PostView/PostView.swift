@@ -20,7 +20,6 @@ struct PostView: View {
             
             HStack {
                 // like, comment actions
-                
                 IconButton(iconName: "heart", width: 30, height: 30).padding()
                 IconButton(iconName: "message", width: 30, height: 30).padding()
                 IconButton(iconName: "square.and.arrow.up", width: 30, height: 30).padding()
@@ -29,7 +28,17 @@ struct PostView: View {
             
             HStack {
                 // likeCount
+                Image(systemName: "heart")
+                    .resizable()
+                    .foregroundColor(Color.red)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 30, height: 30, alignment: .center)
+                Text("32 Likes")
+                    .font(.system(size: 20))
+                Spacer()
             }
+            .padding()
+            .padding(.top, -20)
             
             // Comments
             
