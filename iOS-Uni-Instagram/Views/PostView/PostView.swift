@@ -21,8 +21,11 @@ struct PostView: View {
             HStack {
                 // like, comment actions
                 
-                HeartButton()
-            }
+                IconButton(iconName: "heart")
+                IconButton(iconName: "message")
+                IconButton(iconName: "square.and.arrow.up")
+                Spacer()
+            }.padding()
             
             HStack {
                 // likeCount

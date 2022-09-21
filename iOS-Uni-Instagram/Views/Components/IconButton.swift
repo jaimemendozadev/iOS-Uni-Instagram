@@ -1,5 +1,5 @@
 //
-//  HeartButton.swift
+//  IconButton.swift
 //  iOS-Uni-Instagram
 //
 //  Created by Jaime Mendoza on 9/21/22.
@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct HeartButton: View {
+struct IconButton: View {
+    var iconName: String
     var body: some View {
         Button(action: {}, label: {
-            Image(systemName: "heart")
+            Image(systemName: iconName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40, alignment: .center)
@@ -19,8 +20,8 @@ struct HeartButton: View {
     }
 }
 
-struct HeartButton_Previews: PreviewProvider {
+struct IconButton_Previews: PreviewProvider {
     static var previews: some View {
-        HeartButton()
+        IconButton(iconName: "heart")
     }
 }
