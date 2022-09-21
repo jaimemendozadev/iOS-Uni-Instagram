@@ -9,12 +9,14 @@ import SwiftUI
 
 struct IconButton: View {
     var iconName: String
+    var width: CGFloat
+    var height: CGFloat
     var body: some View {
         Button(action: {}, label: {
             Image(systemName: iconName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 40, height: 40, alignment: .center)
+                .frame(width: width, height: height, alignment: .center)
                 .foregroundColor(Color(.label))
         })
     }
@@ -22,6 +24,6 @@ struct IconButton: View {
 
 struct IconButton_Previews: PreviewProvider {
     static var previews: some View {
-        IconButton(iconName: "heart")
+        IconButton(iconName: "heart", width: 30, height: 30)
     }
 }

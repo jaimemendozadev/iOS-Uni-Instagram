@@ -21,9 +21,9 @@ struct PostView: View {
             HStack {
                 // like, comment actions
                 
-                IconButton(iconName: "heart")
-                IconButton(iconName: "message")
-                IconButton(iconName: "square.and.arrow.up")
+                IconButton(iconName: "heart", width: 30, height: 30).padding()
+                IconButton(iconName: "message", width: 30, height: 30).padding()
+                IconButton(iconName: "square.and.arrow.up", width: 30, height: 30).padding()
                 Spacer()
             }.padding()
             
