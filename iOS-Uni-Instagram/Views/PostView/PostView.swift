@@ -13,11 +13,15 @@ struct PostView: View {
         VStack() {
             HStack {
                 ProfileInfo(userName: "Kanye West")
-            }
-            .padding() 
+            }.padding()
+            .padding(.leading, 20) // May have to delete this
+            
+            ImageView(imagePath: "foo")
             
             HStack {
                 // like, comment actions
+                
+                HeartButton()
             }
             
             HStack {
