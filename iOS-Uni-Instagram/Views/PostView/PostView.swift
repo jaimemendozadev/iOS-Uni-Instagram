@@ -64,6 +64,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView(userImagePath: "User1", imagePath: "Image1")
+        PostView(userImagePath: "User1", imagePath: "Image2")
     }
 }
