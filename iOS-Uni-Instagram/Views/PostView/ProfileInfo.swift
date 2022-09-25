@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ProfileInfo: View {
     var userName: String
+    var userImagePath: String
     var body: some View {
-        Image(systemName: "person.circle")
+        Image(userImagePath)
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 40, height: 40, alignment: .center)
@@ -26,6 +27,6 @@ struct ProfileInfo: View {
 
 struct ProfileInfo_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileInfo(userName: "Kanye West")
+        ProfileInfo(userName: "Kanye West", userImagePath: "User1")
     }
 }

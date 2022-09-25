@@ -11,7 +11,9 @@ struct ImageView: View {
     var imagePath: String
     var body: some View {
         Image(imagePath)
+            .resizable()
             .frame(width: 430, height: 430, alignment: .center)
+            .aspectRatio(contentMode: .fill)
             .background(Color(.secondarySystemBackground))
           
     }

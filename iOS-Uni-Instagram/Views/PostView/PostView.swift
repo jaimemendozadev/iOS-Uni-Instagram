@@ -9,14 +9,16 @@ import SwiftUI
 
 
 struct PostView: View {
+    let userImagePath: String
+    let imagePath: String;
     var body: some View {
         VStack() {
             HStack {
-                ProfileInfo(userName: "Kanye West")
+                ProfileInfo(userName: "Kanye West", userImagePath: userImagePath)
             }.padding()
             .padding(.leading, 20) // May have to delete this
             
-            ImageView(imagePath: "foo")
+            ImageView(imagePath: imagePath)
             
             HStack {
                 // like, comment actions
@@ -62,6 +64,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView()
+        PostView(userImagePath: "User1", imagePath: "Image1")
     }
 }

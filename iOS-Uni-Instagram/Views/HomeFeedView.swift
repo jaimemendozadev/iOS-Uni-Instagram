@@ -15,7 +15,7 @@ struct HomeFeedView: View {
                     StoriesView()
                     
                     ForEach(1...30, id: \.self) {num in
-                        PostView()
+                        PostView(userImagePath: "User1", imagePath: "Image1")
                             .padding(.bottom, 20)
                     }
                     
