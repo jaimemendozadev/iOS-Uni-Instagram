@@ -7,15 +7,25 @@
 
 import SwiftUI
 
+struct ImageData: Hashable {
+    var userImagePath: String
+    var imagePath: String
+}
+
+
 struct HomeFeedView: View {
+    var imageData = (1...5).map({num in
+        return ImageData(userImagePath: "User\(num)", imagePath: "Image\(num)")
+    })
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack {
                     StoriesView()
                     
-                    ForEach(1...30, id: \.self) {num in
-                        PostView(userImagePath: "User1", imagePath: "Image2")
+                    ForEach(imageData, id: \.self) {imageHash in
+                        
+                        PostView(userImagePath: imageHash.userImagePath , imagePath: imageHash.imagePath)
                             .padding(.bottom, 20)
                     }
                     
