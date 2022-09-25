@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct StoriesView: View {
+    let data = (1...5).map({"User\($0)"})
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
-                ForEach(1...10, id:\.self) {num in
-                    StoryView(imagePath: "foo \(num)")
+                ForEach(data, id:\.self) {imagePath in
+                    StoryView(imagePath: imagePath)
                 }
                 
             }

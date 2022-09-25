@@ -40,7 +40,20 @@ struct PostView: View {
             .padding()
             .padding(.top, -20)
             
+            // Caption
+            Text("Hope 2023 is better than 2022! 😬 #newyear #🤞🏼 #switfui")
+                .font(.headline)
+                .frame(width: .infinity, height: 50, alignment: .leading)
+            
             // Comments
+            
+            // Date
+            HStack {
+                Text("1 hour ago")
+                    .foregroundColor(Color(.secondaryLabel))
+                    .multilineTextAlignment(.leading)
+                Spacer()
+            }
             
             
         }

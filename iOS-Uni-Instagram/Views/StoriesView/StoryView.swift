@@ -13,6 +13,7 @@ struct StoryView: View {
     var body: some View {
         Image(imagePath)
             .resizable()
+            .aspectRatio(contentMode: .fill)
             .frame(width: 90, height: 90, alignment: .center)
             .background(Color.blue)
             .cornerRadius(45)
