@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct ExploreView: View {
+    @State var text = ""
+    
     var body: some View {
-        Text("Explore View")
+        NavigationView {
+            ScrollView {
+                VStack {
+                    TextField("Search...", text: $text)
+                        .padding()
+                        .background(Color(.secondarySystemBackground))
+                        .cornerRadius(8)
+                        .padding()
+                        
+                    
+                    Spacer()
+                }
+                
+            }.navigationTitle("Explore")
+        }
     }
 }
 
